@@ -1,0 +1,30 @@
+{
+  "datahive": {
+    "base_url": "https://your-datahive-instance.com/api",
+    "api_version": "v1",
+    "timeout": 30,
+    "max_retries": 3
+  },
+  "snowflake": {
+    "account": "your-account.snowflakecomputing.com",
+    "warehouse": "your-warehouse",
+    "database": "your-database",
+    "schema": "your-schema"
+  },
+  "azure_ad": {
+    "tenant_id": "your-tenant-id",
+    "client_id": "your-client-id",
+    "client_secret": "your-client-secret",
+    "scope": "https://graph.microsoft.com/.default",
+    "authority": "https://login.microsoftonline.com"
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file": "datahive.log"
+  },
+  "cache": {
+    "token_cache_file": ".token_cache",
+    "cache_expiry_buffer": 300
+  }
+}
